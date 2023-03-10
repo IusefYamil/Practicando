@@ -1,0 +1,449 @@
+.contacto__background {
+  background-color: gold;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Oswald", sans-serif;
+}
+.contacto__background h1 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.section__conteiner--stats {
+  background-color: gold;
+}
+.section__conteiner--stats h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+.caja__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+  background-image: url(../img/m30.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.caja__stats .element {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.caja__stats .element .h2__background--stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 250px;
+  background-color: black;
+  border-radius: 10px;
+}
+.caja__stats .element .h2__background--stats .stats__h2--TitleComparative {
+  color: aliceblue;
+}
+.caja__stats .element .stats__bar {
+  height: 20px;
+  width: 200px;
+  background-color: aqua;
+  border-radius: 20px;
+}
+.caja__stats .element .stats__bar .stats__progress {
+  display: flex;
+  height: 100%;
+  width: var(--w);
+  background-color: blueviolet;
+  border-radius: 15px;
+  animation: aumento 5s ease;
+}
+
+@keyframes aumento {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--w);
+  }
+}
+.section--iconic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  background-color: rgb(236, 85, 110);
+  font-family: "Oswald", sans-serif;
+}
+
+.article--iconic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+  width: 100vw;
+  background-color: rgb(236, 85, 110);
+  font-family: "Oswald", sans-serif;
+}
+.article--iconic h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.article--iconic img {
+  height: 200px;
+  width: 300px;
+  border-radius: 25px;
+}
+.article--iconic .iconic--video {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+/*Header*/
+.conteiner__logo {
+  height: 70px;
+  width: 60px;
+  /*Here i define img height and width*/
+}
+.conteiner__logo img {
+  height: 100%;
+  width: 100%;
+}
+
+/*My nav link*/
+.nav-link {
+  font-family: "Oswald", sans-serif;
+  color: bisque;
+}
+.nav-link:hover {
+  padding: 20px;
+  background-color: rgb(251, 255, 34);
+  color: rgb(0, 0, 0);
+}
+
+aside {
+  display: none;
+}
+
+.footer__conteiner--sitio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.footer__conteiner--sitio .footer__conteiner--logo {
+  height: 80px;
+  width: 80px;
+}
+.footer__conteiner--sitio .footer__conteiner--logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer__conteiner--sponsor {
+  background-color: bisque;
+}
+.footer__conteiner--sponsor .footer__logos--sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: bisque;
+}
+.footer__conteiner--sponsor .footer__logos--sponsor ul li {
+  list-style: none;
+}
+.footer__conteiner--sponsor .footer__logos--sponsor ul li a {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.footer__conteiner--redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+}
+.footer__conteiner--redes ul {
+  list-style: none;
+}
+.footer__conteiner--redes ul li a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.footer__conteiner--redes .img__logo--redes {
+  height: 24px;
+  width: 24px;
+}
+
+.article--estadistica {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+  width: 100vw;
+  background-color: gold;
+  font-family: "Oswald", sans-serif;
+}
+.article--estadistica h2 {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+.article--estadistica img {
+  height: 200px;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.article--iconic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+  width: 100vw;
+  background-color: rgb(236, 85, 110);
+  font-family: "Oswald", sans-serif;
+}
+.article--iconic h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.article--iconic img {
+  height: 200px;
+  width: 300px;
+  border-radius: 25px;
+}
+.article--iconic .iconic--video {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.article--novedad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+  width: 100vw;
+  background-color: rgb(101, 168, 212);
+  font-family: "Oswald", sans-serif;
+}
+.article--novedad h2 {
+  text-align: center;
+  justify-self: center;
+  font-size: 40px;
+  color: white;
+}
+.article--novedad img {
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+}
+
+.button--linkpage {
+  height: 40px;
+  width: 100px;
+  background-color: black;
+  border-radius: 10px;
+  border-color: black;
+}
+.button--linkpage a {
+  color: bisque;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.palmares__conteiner {
+  background-color: gold;
+  font-family: "Oswald", sans-serif;
+}
+.palmares__conteiner section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Header*/
+.Section__cotainer--summer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+}
+.Section__cotainer--summer h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+.conteiner__article--novedades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Section__cotainer--winter {
+  background-color: rgb(101, 168, 212);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.Section__cotainer--winter h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+.card {
+  height: 310px;
+  width: 165px;
+  align-items: center;
+}
+.card .card-img-top {
+  padding-top: 5px;
+  height: 155px;
+  width: 85%;
+}
+.card .card-img-top:hover {
+  height: 160px;
+  width: 160px;
+}
+.card .card-body .card-title {
+  font-family: "Oswald", sans-serif;
+}
+.card .card-body .card-text {
+  font-family: "Oswald", sans-serif;
+}
+
+#carousel {
+  display: none;
+  justify-content: center;
+}
+#carousel .carousel-inner {
+  width: 100vw;
+}
+#carousel .carousel-item {
+  height: 500px;
+}
+#carousel .carousel-item img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+#carousel .carousel__h5--oscuro {
+  color: black;
+}
+#carousel .carousel__p--oscuro {
+  color: black;
+}
+#carousel .carousel-control-prev-icon {
+  color: black;
+}
+#carousel .carousel__fondo--texto {
+  border-radius: 20px;
+  background-color: aqua;
+}
+
+/*Here i put gobal variable*/
+/*Header*/
+.conteiner__logo {
+  height: 70px;
+  width: 60px;
+  /*Here i define img height and width*/
+}
+.conteiner__logo img {
+  height: 100%;
+  width: 100%;
+}
+
+/*My nav link*/
+.nav-link {
+  font-family: "Oswald", sans-serif;
+  color: bisque;
+}
+.nav-link:hover {
+  padding: 20px;
+  background-color: rgb(251, 255, 34);
+  color: rgb(0, 0, 0);
+}
+
+aside {
+  display: none;
+}
+
+.footer__conteiner--sitio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.footer__conteiner--sitio .footer__conteiner--logo {
+  height: 80px;
+  width: 80px;
+}
+.footer__conteiner--sitio .footer__conteiner--logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer__conteiner--sponsor {
+  background-color: bisque;
+}
+.footer__conteiner--sponsor .footer__logos--sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: bisque;
+}
+.footer__conteiner--sponsor .footer__logos--sponsor ul li {
+  list-style: none;
+}
+.footer__conteiner--sponsor .footer__logos--sponsor ul li a {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.footer__conteiner--redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+}
+.footer__conteiner--redes ul {
+  list-style: none;
+}
+.footer__conteiner--redes ul li a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.footer__conteiner--redes .img__logo--redes {
+  height: 24px;
+  width: 24px;
+}
+
+/*PC*/
+
+/*# sourceMappingURL=estilo.css.map */

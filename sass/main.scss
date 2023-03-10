@@ -1,0 +1,98 @@
+/*Here i put gobal variable*/
+
+@use'./partials/variable';
+@use'./partials/contacto';
+@use'./partials/estadisticas';
+@use'./partials/iconic';
+@use'./partials/index';
+@use'./partials/palmares';
+@use './partials/novedades';
+
+/*Header*/
+.conteiner__logo{
+    height: 70px;
+    width: 60px;
+        /*Here i define img height and width*/
+        img{
+            height: 100%;
+            width: 100%;
+        }
+}
+/*My nav link*/
+.nav-link{
+    font-family: variable.$font-global;
+    color: bisque;
+    &:hover{
+        padding:20px;
+        background-color: rgb(251, 255, 34);
+        color:rgb(0, 0, 0);
+    }
+}
+
+aside{
+    display: none;
+}
+
+.footer__conteiner--sitio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    .footer__conteiner--logo{
+        height: 80px;
+        width: 80px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+    }
+
+}
+.footer__conteiner--sponsor{
+    background-color: bisque;
+    .footer__logos--sponsor{
+        display: flex;
+        justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         color: bisque;
+
+         ul{
+            li{
+                list-style:none;
+                a{
+                    font-family: variable.$font__link--a;
+                     color: black;
+                     text-decoration: none;
+                }
+            }
+         }
+    }
+}
+.footer__conteiner--redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    ul{
+        list-style: none;
+        li{
+            a{
+                font-family: variable.$font__link--a;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .img__logo--redes{
+        height: 24px;
+        width: 24px;
+    }
+}
+
+
+    
+   
+  
+/*PC*/

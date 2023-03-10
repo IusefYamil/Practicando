@@ -1,0 +1,13 @@
+@use 'variable';
+
+.palmares__conteiner{
+    background-color: gold;
+    font-family: variable.$font-global;
+
+            section{
+                    display: flex;  
+                    flex-direction: column;              
+                    justify-content: space-around;
+                    align-items: center;
+            }
+   }

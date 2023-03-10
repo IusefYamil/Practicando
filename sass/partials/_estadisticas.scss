@@ -1,0 +1,61 @@
+@use 'variable';
+
+.section__conteiner--stats{
+    background-color: gold;
+     h1{
+         text-align: center;
+         font-family: variable.$font-global;
+         font-weight:700;
+     }
+ }
+ .caja__stats{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:space-evenly;
+     height: 80vh;
+     background-image: url(../img/m30.webp);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     margin-bottom: 30px;
+     border-radius: 20px;
+         .element{
+             flex-direction: column;
+             align-items: center;
+             justify-content:space-evenly;
+             .h2__background--stats{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 height: 50px;
+                 width: 250px;
+                 background-color: black;
+                 border-radius: 10px;
+                 .stats__h2--TitleComparative{
+                     color: aliceblue;
+                 }
+             }
+ 
+             .stats__bar{
+                 height: 20px;
+                 width: 200px;
+                 background-color: aqua;
+                 border-radius: 20px;
+                 .stats__progress{
+                     display: flex;
+                      height: 100%;
+                      width: var(--w);
+                      background-color: blueviolet;
+                      border-radius: 15px;
+                      animation: aumento 5s ease;
+                 }
+             }
+ 
+         }
+ }
+ @keyframes aumento {
+     0%{width: 0%;}
+     100%{width:var(--w);}
+ }
+ 

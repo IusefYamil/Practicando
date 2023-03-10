@@ -1,0 +1,169 @@
+@use 'variable';
+/*Header*/
+.conteiner__logo{
+    height: 70px;
+    width: 60px;
+        /*Here i define img height and width*/
+        img{
+            height: 100%;
+            width: 100%;
+        }
+}
+/*My nav link*/
+.nav-link{
+    font-family: variable.$font-global;
+    color: bisque;
+    &:hover{
+        padding:20px;
+        background-color: rgb(251, 255, 34);
+        color:rgb(0, 0, 0);
+    }
+}
+
+aside{
+    display: none;
+}
+
+.footer__conteiner--sitio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    .footer__conteiner--logo{
+        height: 80px;
+        width: 80px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+    }
+
+}
+.footer__conteiner--sponsor{
+    background-color: bisque;
+    .footer__logos--sponsor{
+        display: flex;
+        justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         color: bisque;
+
+         ul{
+            li{
+                list-style:none;
+                a{
+                    font-family: variable.$font__link--a;
+                     color: black;
+                     text-decoration: none;
+                }
+            }
+         }
+    }
+}
+.footer__conteiner--redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    ul{
+        list-style: none;
+        li{
+            a{
+                font-family: variable.$font__link--a;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .img__logo--redes{
+        height: 24px;
+        width: 24px;
+    }
+}
+.article--estadistica{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: variable.$article__height--mobile;
+    width: 100vw;
+    background-color:gold;
+    font-family: variable.$font-global;
+    h2{
+        font-size: 40px;
+        color:variable.$article__title--dark;
+        text-align: center;
+     }
+
+    img{
+       height: variable.$article__img--height; 
+       width: variable.$article__img--width;
+       border-radius: 25px;
+    }
+    
+}
+
+.article--iconic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: variable.$article__height--mobile;
+    width: 100vw;
+    background-color:rgb(236,85,110) ;
+    font-family: variable.$font-global; 
+        h2{
+            font-size: 40px;
+            color: variable.$article__title--light;
+            text-align: center;
+        }
+        img{
+            height: variable.$article__img--height; 
+            width: variable.$article__img--width;
+            border-radius: 25px;
+         }
+         .iconic--video{
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+         }
+
+}
+
+.article--novedad{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: variable.$article__height--mobile;
+    width: 100vw;
+    background-color:rgb(101,168,212);
+    font-family: variable.$font-global; 
+
+        h2{
+            text-align: center;
+            justify-self:center;
+             font-size: 40px;
+             color: variable.$article__title--light;
+        }
+        img{
+             height: 250px; 
+            width: 250px;
+             border-radius: 25px;
+        }
+        
+}
+
+.button--linkpage{
+    height: 40px;
+    width: 100px;
+    background-color:black;
+    border-radius: 10px;
+    border-color: black;
+    a{
+        color: bisque;
+        text-decoration: none;
+        font-family: variable.$font__link--a;
+    }
+}

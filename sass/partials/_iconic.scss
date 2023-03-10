@@ -1,0 +1,37 @@
+@use 'variable';
+.section--iconic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    background-color:rgb(236,85,110) ;
+    font-family: variable.$font-global;      
+         
+}
+.article--iconic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: variable.$article__height--mobile;
+    width: 100vw;
+    background-color:rgb(236,85,110) ;
+    font-family: variable.$font-global; 
+        h2{
+            font-size: 40px;
+            color: variable.$article__title--light;
+            text-align: center;
+        }
+        img{
+            height: variable.$article__img--height; 
+            width: variable.$article__img--width;
+            border-radius: 25px;
+         }
+         .iconic--video{
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+         }
+
+}

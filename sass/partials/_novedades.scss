@@ -1,0 +1,93 @@
+@use 'variable';
+/*Header*/
+
+.Section__cotainer--summer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:gray ;
+    h2{
+        font-family: variable.$font-global;
+    }
+     
+}
+.conteiner__article--novedades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+} 
+.Section__cotainer--winter{
+    background-color:rgb(101,168,212);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    h2{
+        font-family: variable.$font-global;
+    }
+   
+}
+
+.card{
+   
+    height: 310px;
+    width: 165px;
+    align-items: center;
+   
+    .card-img-top{
+        padding-top: 5px;
+        height: 155px;
+        width: 85%;
+        
+                &:hover{
+                    height: 160px;
+                    width: 160px;
+                }
+            
+     }
+    
+    .card-body{
+        .card-title{
+            font-family:variable.$font-global;
+        }
+        .card-text{
+            font-family: variable.$font-global;
+        }
+    }
+    
+}
+
+
+#carousel{
+    display: none;
+    justify-content: center;
+    .carousel-inner{
+        width: 100vw;
+     }
+     .carousel-item {
+         height: 500px;
+         img{
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+         }
+     }
+    
+     .carousel__h5--oscuro{
+         color: black;
+     }
+     .carousel__p--oscuro{
+         color: black;
+     }
+     .carousel-control-prev-icon{
+         color: black;
+     }
+     .carousel__fondo--texto{
+         border-radius: 20px;
+         background-color: aqua;
+     }
+
+   }

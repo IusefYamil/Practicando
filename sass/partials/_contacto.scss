@@ -1,0 +1,16 @@
+
+@use 'variable';
+
+
+.contacto__background{
+    background-color: gold;
+    height: 100vh;
+    width: 100vw;
+    font-family: variable.$font-global;
+        h1{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            font-family: variable.$font-global;
+        }
+   }
