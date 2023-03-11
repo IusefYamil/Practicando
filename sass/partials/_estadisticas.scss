@@ -8,6 +8,7 @@
          font-weight:700;
      }
  }
+ 
  .caja__stats{
      display: flex;
      flex-direction: column;
@@ -29,24 +30,24 @@
                  justify-content: center;
                  align-items: center;
                  height: 50px;
-                 width: 250px;
+                 width: 14em;
                  background-color: black;
                  border-radius: 10px;
                  .stats__h2--TitleComparative{
-                     color: aliceblue;
+                     color:bisque;
                  }
              }
  
              .stats__bar{
                  height: 20px;
                  width: 200px;
-                 background-color: aqua;
+                 background-color: black;
                  border-radius: 20px;
                  .stats__progress{
                      display: flex;
                       height: 100%;
                       width: var(--w);
-                      background-color: blueviolet;
+                      background-image: linear-gradient(to right,red,blue);
                       border-radius: 15px;
                       animation: aumento 5s ease;
                  }
@@ -58,4 +59,5 @@
      0%{width: 0%;}
      100%{width:var(--w);}
  }
+ 
  

@@ -1,54 +1,52 @@
 @use 'variable';
 /*Header*/
 
-.Section__cotainer--summer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color:gray ;
-    h2{
-        font-family: variable.$font-global;
-    }
-     
-}
-.conteiner__article--novedades{
+
+@mixin flex-row-wrap-around-center{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-} 
-.Section__cotainer--winter{
-    background-color:rgb(101,168,212);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    h2{
-        font-family: variable.$font-global;
-    }
-   
 }
+
+$Sections:(
+    winter:rgb(101,168,212),
+    summer:rgb(236,85,110)
+);
+@each $Section,$color in $Sections{
+    .Section__cotainer--#{$Section}{
+        @include flex-row-wrap-around-center;
+        background-color: $color;
+        h2{
+            font-family: variable.$font-global;
+            color: variable.$article__title--light;
+        }
+    }
+}
+
+.conteiner__article--novedades{
+    @include flex-row-wrap-around-center;
+} 
 
 .card{
    
     height: 310px;
     width: 165px;
     align-items: center;
-   
+
     .card-img-top{
         padding-top: 5px;
-        height: 155px;
+        height: 130px;
         width: 85%;
-        
-                &:hover{
-                    height: 160px;
-                    width: 160px;
-                }
-            
+        transition: all 0,1s;
+
+        &:hover{
+           height: 150px;
+           width: 85%;
+        }
      }
-    
+   
     .card-body{
         .card-title{
             font-family:variable.$font-global;

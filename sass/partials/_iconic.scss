@@ -1,19 +1,25 @@
 @use 'variable';
-.section--iconic{
-    display: flex;
+
+
+@mixin flex-column-around-center{
+    display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
+}
+
+
+
+.section--iconic{
+    @include flex-column-around-center;
     width: 100vw;
     background-color:rgb(236,85,110) ;
     font-family: variable.$font-global;      
          
 }
+
 .article--iconic{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-column-around-center;
     height: variable.$article__height--mobile;
     width: 100vw;
     background-color:rgb(236,85,110) ;
@@ -30,7 +36,7 @@
          }
          .iconic--video{
             height: 300px;
-            width: 300px;
+            width: 200px;
             border-radius: 10px;
          }
 

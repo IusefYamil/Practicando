@@ -43,24 +43,24 @@
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 250px;
+  width: 14em;
   background-color: black;
   border-radius: 10px;
 }
 .caja__stats .element .h2__background--stats .stats__h2--TitleComparative {
-  color: aliceblue;
+  color: bisque;
 }
 .caja__stats .element .stats__bar {
   height: 20px;
   width: 200px;
-  background-color: aqua;
+  background-color: black;
   border-radius: 20px;
 }
 .caja__stats .element .stats__bar .stats__progress {
   display: flex;
   height: 100%;
   width: var(--w);
-  background-color: blueviolet;
+  background-image: linear-gradient(to right, red, blue);
   border-radius: 15px;
   animation: aumento 5s ease;
 }
@@ -100,93 +100,46 @@
 }
 .article--iconic img {
   height: 200px;
-  width: 300px;
+  width: 230px;
   border-radius: 25px;
 }
 .article--iconic .iconic--video {
   height: 300px;
-  width: 300px;
+  width: 200px;
   border-radius: 10px;
 }
 
 /*Header*/
-.conteiner__logo {
-  height: 70px;
-  width: 60px;
-  /*Here i define img height and width*/
+.conteiner__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(101, 168, 212);
 }
-.conteiner__logo img {
-  height: 100%;
-  width: 100%;
-}
-
-/*My nav link*/
-.nav-link {
+.conteiner__title .h1__pageTitle {
   font-family: "Oswald", sans-serif;
-  color: bisque;
-}
-.nav-link:hover {
-  padding: 20px;
-  background-color: rgb(251, 255, 34);
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 aside {
   display: none;
 }
 
-.footer__conteiner--sitio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-}
-.footer__conteiner--sitio .footer__conteiner--logo {
-  height: 80px;
-  width: 80px;
-}
-.footer__conteiner--sitio .footer__conteiner--logo img {
-  height: 100%;
-  width: 100%;
-}
-
-.footer__conteiner--sponsor {
-  background-color: bisque;
-}
-.footer__conteiner--sponsor .footer__logos--sponsor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: bisque;
-}
-.footer__conteiner--sponsor .footer__logos--sponsor ul li {
-  list-style: none;
-}
-.footer__conteiner--sponsor .footer__logos--sponsor ul li a {
-  font-family: "Roboto", sans-serif;
-  color: black;
-  text-decoration: none;
-}
-
-.footer__conteiner--redes {
+/*Article colors modifiers*/
+.article--novedad {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: bisque;
+  height: 450px;
+  font-family: "Oswald", sans-serif;
+  width: 100vw;
+  background-color: rgb(101, 168, 212);
 }
-.footer__conteiner--redes ul {
-  list-style: none;
-}
-.footer__conteiner--redes ul li a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  color: black;
-}
-.footer__conteiner--redes .img__logo--redes {
-  height: 24px;
-  width: 24px;
+.article--novedad img {
+  height: 200px;
+  width: 230px;
+  border-radius: 25px;
 }
 
 .article--estadistica {
@@ -195,18 +148,13 @@ aside {
   justify-content: space-around;
   align-items: center;
   height: 450px;
+  font-family: "Oswald", sans-serif;
   width: 100vw;
   background-color: gold;
-  font-family: "Oswald", sans-serif;
-}
-.article--estadistica h2 {
-  font-size: 40px;
-  color: black;
-  text-align: center;
 }
 .article--estadistica img {
   height: 200px;
-  width: 300px;
+  width: 230px;
   border-radius: 25px;
 }
 
@@ -216,19 +164,26 @@ aside {
   justify-content: space-around;
   align-items: center;
   height: 450px;
+  font-family: "Oswald", sans-serif;
   width: 100vw;
   background-color: rgb(236, 85, 110);
-  font-family: "Oswald", sans-serif;
 }
+.article--iconic img {
+  height: 200px;
+  width: 230px;
+  border-radius: 25px;
+}
+
+.article--estadistica h2 {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
 .article--iconic h2 {
   font-size: 40px;
   color: white;
   text-align: center;
-}
-.article--iconic img {
-  height: 200px;
-  width: 300px;
-  border-radius: 25px;
 }
 .article--iconic .iconic--video {
   height: 300px;
@@ -236,16 +191,6 @@ aside {
   border-radius: 10px;
 }
 
-.article--novedad {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 450px;
-  width: 100vw;
-  background-color: rgb(101, 168, 212);
-  font-family: "Oswald", sans-serif;
-}
 .article--novedad h2 {
   text-align: center;
   justify-self: center;
@@ -271,6 +216,105 @@ aside {
   font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (min-width: 800px) {
+  .article--novedad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    font-family: "Oswald", sans-serif;
+    width: 100vw;
+    background-color: rgb(101, 168, 212);
+  }
+  .article--novedad img {
+    height: 200px;
+    width: 230px;
+    border-radius: 25px;
+  }
+  .article--estadistica {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    font-family: "Oswald", sans-serif;
+    width: 100vw;
+    background-color: gold;
+  }
+  .article--estadistica img {
+    height: 200px;
+    width: 230px;
+    border-radius: 25px;
+  }
+  .article--iconic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    font-family: "Oswald", sans-serif;
+    width: 100vw;
+    background-color: rgb(236, 85, 110);
+  }
+  .article--iconic img {
+    height: 200px;
+    width: 230px;
+    border-radius: 25px;
+  }
+  .article--estadistica h2 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+  }
+  .article--iconic h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  .article--iconic .iconic--video {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .article--novedad h2 {
+    text-align: center;
+    justify-self: center;
+    font-size: 40px;
+    color: white;
+  }
+  .article--novedad img {
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+  }
+  .button--linkpage {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    border-radius: 10px;
+    border-color: black;
+  }
+  .button--linkpage a {
+    color: bisque;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
+  aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Oswald", sans-serif;
+  }
+  aside .aside__img--conteiner {
+    height: 50%;
+    width: 100%;
+  }
+  aside .aside__img--conteiner img {
+    height: 30%;
+    width: 100%;
+  }
+}
 .palmares__conteiner {
   background-color: gold;
   font-family: "Oswald", sans-serif;
@@ -283,15 +327,30 @@ aside {
 }
 
 /*Header*/
+.Section__cotainer--winter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(101, 168, 212);
+}
+.Section__cotainer--winter h2 {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
 .Section__cotainer--summer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  background-color: gray;
+  background-color: rgb(236, 85, 110);
 }
 .Section__cotainer--summer h2 {
   font-family: "Oswald", sans-serif;
+  color: white;
 }
 
 .conteiner__article--novedades {
@@ -302,17 +361,6 @@ aside {
   align-items: center;
 }
 
-.Section__cotainer--winter {
-  background-color: rgb(101, 168, 212);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.Section__cotainer--winter h2 {
-  font-family: "Oswald", sans-serif;
-}
-
 .card {
   height: 310px;
   width: 165px;
@@ -320,12 +368,13 @@ aside {
 }
 .card .card-img-top {
   padding-top: 5px;
-  height: 155px;
+  height: 130px;
   width: 85%;
+  transition: all 0, 1s;
 }
 .card .card-img-top:hover {
-  height: 160px;
-  width: 160px;
+  height: 150px;
+  width: 85%;
 }
 .card .card-body .card-title {
   font-family: "Oswald", sans-serif;
@@ -384,10 +433,6 @@ aside {
   padding: 20px;
   background-color: rgb(251, 255, 34);
   color: rgb(0, 0, 0);
-}
-
-aside {
-  display: none;
 }
 
 .footer__conteiner--sitio {
