@@ -1,5 +1,43 @@
 @use 'variable';
 
+@mixin caja-stats{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 80vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    border-radius: 20px;
+ }
+
+ @mixin column-center-evenly{
+            flex-direction: column;
+             align-items: center;
+             justify-content:space-evenly;
+ }
+ @mixin h2-center-center-height-width-radius{
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+     width: 14em;
+     border-radius: 10px;
+ }
+ @mixin stats-bar-height-width-radius{
+    height: 20px;
+    width: 200px;
+    border-radius: 20px;
+ }
+ @mixin stats-progress-flex-height-width-radius-animation{
+                     display: flex;
+                      height: 100%;
+                      width: var(--w);
+                      border-radius: 15px;
+                      animation: aumento 5s ease;
+ }
+
 .section__conteiner--stats{
     background-color: gold;
      h1{
@@ -9,52 +47,113 @@
      }
  }
  
- .caja__stats{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content:space-evenly;
-     height: 80vh;
-     background-image: url(../img/m30.webp);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     margin-bottom: 30px;
-     border-radius: 20px;
-         .element{
-             flex-direction: column;
-             align-items: center;
-             justify-content:space-evenly;
-             .h2__background--stats{
-                 display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 height: 50px;
-                 width: 14em;
-                 background-color: black;
-                 border-radius: 10px;
-                 .stats__h2--TitleComparative{
-                     color:bisque;
-                 }
-             }
- 
-             .stats__bar{
-                 height: 20px;
-                 width: 200px;
-                 background-color: black;
-                 border-radius: 20px;
-                 .stats__progress{
-                     display: flex;
-                      height: 100%;
-                      width: var(--w);
-                      background-image: linear-gradient(to right,red,blue);
-                      border-radius: 15px;
-                      animation: aumento 5s ease;
-                 }
-             }
- 
-         }
+ .caja__stats--general{
+    @include caja-stats;
+    align-items: flex-start;
+    background-image: url(../img/f1.png);
+           .element{
+               @include column-center-evenly;
+               .h2__background--stats{
+                   @include h2-center-center-height-width-radius;
+                   background-color: rgba($color: #000000, $alpha: 1);
+                   .stats__h2--TitleComparative{
+                       color:bisque;
+                   }
+               }
+   
+               .stats__bar{
+                  @include stats-bar-height-width-radius;
+                  background-color: rgba($color: #000000, $alpha: 1);
+                   
+                   .stats__progress{
+                      @include stats-progress-flex-height-width-radius-animation;
+                      background-image: linear-gradient(to right,#f2f2f2,#43c9e8);
+                   }
+               }
+   
+           }
+   }
+ .caja__stats--arg{
+    @include caja-stats;
+    align-items: center;
+    background-image: url(../img/mtop.jpg);
+    .element{
+        @include column-center-evenly;
+        .h2__background--stats{
+            @include h2-center-center-height-width-radius;
+            background-color: rgba($color: #000000, $alpha: .7);
+            .stats__h2--TitleComparative{
+                color:bisque;
+            }
+        }
+
+        .stats__bar{
+           @include stats-bar-height-width-radius;
+           background-color: rgba($color: #000000, $alpha: .7);
+            
+            .stats__progress{
+               @include stats-progress-flex-height-width-radius-animation;
+               background-image: linear-gradient(to right,#ffffff,#0092ff);
+            }
+        }
+
+    }
  }
+ .caja__stats--bar{
+    @include caja-stats;
+    align-items: center;
+    background-image: url(../img/leo.jpg);
+    .element{
+        @include column-center-evenly;
+        .h2__background--stats{
+            @include h2-center-center-height-width-radius;
+            background-color: rgba($color: #000000, $alpha: .7);
+            .stats__h2--TitleComparative{
+                color:bisque;
+            }
+        }
+
+        .stats__bar{
+           @include stats-bar-height-width-radius;
+           background-color: rgba($color: #000000, $alpha: .7);
+            
+            .stats__progress{
+               @include stats-progress-flex-height-width-radius-animation;
+               background-image: linear-gradient(to right,red,blue);
+            }
+        }
+
+    }
+ }
+ .caja__stats--psg{
+    @include caja-stats;
+    align-items: center;
+    background-image: url(../img/m30.webp);
+    .element{
+        @include column-center-evenly;
+        .h2__background--stats{
+            @include h2-center-center-height-width-radius;
+            background-color: rgba($color: #000000, $alpha: .7);
+            .stats__h2--TitleComparative{
+                color:bisque;
+            }
+        }
+
+        .stats__bar{
+           @include stats-bar-height-width-radius;
+           background-color: rgba($color: #000000, $alpha: .7);
+            
+            .stats__progress{
+               @include stats-progress-flex-height-width-radius-animation;
+               background-image: linear-gradient(to right,blue, red);
+            }
+        }
+
+    }
+
+    
+ }
+ 
  @keyframes aumento {
      0%{width: 0%;}
      100%{width:var(--w);}

@@ -94,6 +94,18 @@ $articles:(
     }
 }
 
+@mixin flex-row-around-center{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+@mixin flex-column-around-center{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
 
 @media only screen and (min-width: 800px){
         
@@ -104,10 +116,7 @@ $articles:(
 );
 @each $article,$color in $articles{
     .article--#{$article}{
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        align-items: center;
+       @include flex-row-around-center;
         height: variable.$article__height--mobile;
         font-family: variable.$font-global; 
         width: 100vw;
@@ -116,6 +125,11 @@ $articles:(
             height: variable.$article__img--height; 
             width: variable.$article__img--width;
             border-radius: 25px;
+            &:hover{
+                height: variable.$article__img--height+25px; 
+                width: variable.$article__img--width+25px;
+                border-radius: 25px;
+            }
          }
     }
 }
@@ -147,18 +161,7 @@ $articles:(
 
 .article--novedad{
     
-        h2{
-            text-align: center;
-            justify-self:center;
-             font-size: 40px;
-             color: variable.$article__title--light;
-        }       
-        img{
-            height: 250px; 
-            width: 250px;
-            border-radius: 25px;
-         }
-
+       display: none;
 }
 
 .button--linkpage{
@@ -171,23 +174,27 @@ $articles:(
         color: bisque;
         text-decoration: none;
         font-family: variable.$font__link--a;
+
+
     }
+    &:hover{
+        height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    }
+
 }
 
 
 aside{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+   display:flex;
+   @include flex-column-around-center;
+   text-align: center;
     font-family: variable.$font-global;
-    .aside__img--conteiner{
-        height: 50%;
-        width: 100%;
-        img{
-            height: 30%;
-            width: 100%;
-        };
-    }
 }
+
+
+  
+ 
 }
 
