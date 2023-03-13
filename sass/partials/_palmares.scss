@@ -1,16 +1,10 @@
 @use 'variable';
 
 .palmares__conteiner{
-    background-color: gold;
+    background-color: rgba(254,236,65,255);
     font-family: variable.$font-global;
-
-            section{
-                    display: flex;  
-                    flex-direction: column;              
-                    justify-content: space-around;
-                    align-items: center;
-
-
-            }
-           
+        display: flex;
+         flex-direction: column;                                
+        justify-content: space-around;
+        align-items: center;           
    }

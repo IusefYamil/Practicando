@@ -8,19 +8,20 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+   
 }
 
-$Sections:(
+$seasons:(
     winter:rgb(101,168,212),
-    summer:rgb(236,85,110)
+    summer:rgba(254,236,65,255)
 );
-@each $Section,$color in $Sections{
-    .Section__cotainer--#{$Section}{
+@each $season,$color in $seasons{
+    .article__novedad--#{$season}{
         @include flex-row-wrap-around-center;
         background-color: $color;
         h2{
             font-family: variable.$font-global;
-            color: variable.$article__title--light;
+            color: variable.$article__title--dark;
         }
     }
 }
@@ -57,35 +58,62 @@ $Sections:(
     }
     
 }
-
-
-#carousel{
+aside{
     display: none;
-    justify-content: center;
-    .carousel-inner{
-        width: 100vw;
-     }
-     .carousel-item {
-         height: 500px;
-         img{
-            height: 100%;
-            width: 100%;
-            border-radius: 20px;
-         }
-     }
-    
-     .carousel__h5--oscuro{
-         color: black;
-     }
-     .carousel__p--oscuro{
-         color: black;
-     }
-     .carousel-control-prev-icon{
-         color: black;
-     }
-     .carousel__fondo--texto{
-         border-radius: 20px;
-         background-color: aqua;
-     }
+}
+.conteiner__subtitle{
+    text-align: center;
+   color: variable.$article__title--light;
+    background-color: rgb(236,85,110);
+}
 
-   }
+
+@media only screen and (min-width:1200px){
+    @mixin flex-column-wrap-around-center{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+       
+    }
+    @mixin flex-row-wrap-around-center{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+       
+    }
+    
+    $seasons:(
+        winter:rgb(101,168,212),
+        summer:rgba(254,236,65,255)
+    );
+    @each $season,$color in $seasons{
+        .article__novedad--#{$season}{
+            @include flex-row-wrap-around-center;
+            background-color: $color;
+            height: 70vh;
+            h2{
+                font-family: variable.$font-global;
+                color: variable.$article__title--dark;
+            }
+        }
+    }
+    
+    .conteiner__article--novedades{
+        @include flex-row-wrap-around-center;
+    } 
+    aside{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .conteiner__subtitle{
+        text-align: center;
+       color: variable.$article__title--light;
+        background-color: rgb(236,85,110);
+    }
+}

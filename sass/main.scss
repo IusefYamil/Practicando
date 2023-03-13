@@ -7,7 +7,9 @@
 @use'./partials/index';
 @use'./partials/palmares';
 @use './partials/novedades';
-
+*{
+    font-family: variable.$font-global;
+}
 /*Header*/
 .conteiner__logo{
     height: 70px;

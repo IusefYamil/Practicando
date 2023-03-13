@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StatsLeoMessi</title>
-    <link  rel="icon"   href="../img/pngwing.com.png" type="image/png" />
+    <link rel="icon" href="../img/pngwing.com.png" type="image/png" />
+    <meta
+    name="descripcion="
+    content="Fan page dsobre Leo Messi,Estadisticas de Leo en Barcelona,Psg y Argentina"
+  />
+  <meta
+    name="keywords"
+    content="Messi,THE BEST,Ballon dor,La Pulga, Leo Messi,El Mejor del Mundo,futbol,El futbol,stats,Messi goles,Messi asistencias"
+  />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,338 +34,474 @@
     />
     <link rel="stylesheet" href="../css/estilo.css" />
 
-  <body>
-    <div class="container-fluid">
-      <!--Aqui comienza el header-->
-      <header class="row">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark col col-12">
-          <div class="container-fluid">
-            <div class="conteiner__logo">
-              <a class="navbar-brand" href="../index.html"
-                ><img src="../img/low.png" alt="Logo Messi"
-              /></a>
+    <body>
+      <div class="container-fluid">
+        <!--Aqui comienza el header-->
+        <header class="row">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark col col-12">
+            <div class="container-fluid">
+              <div class="conteiner__logo">
+                <a class="navbar-brand" href="../index.html"
+                  ><img src="../img/low.png" alt="Logo Messi"
+                /></a>
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link efecto"
+                      aria-current="page"
+                      href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link efecto" href="./estadisticas.html"
+                      >Estadistica</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link efecto" href="./novedades.html"
+                      >Novedad</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link efecto" href="./iconicos.html">Iconic</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link efecto" href="./palmares.html"
+                      >Palmares</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link efecto" href="./contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <!--Aqui comienza el main-->
+
+        <main class="row">
+          <div class="col col-12 conteiner__title">
+            <h1 class="h1__pageTitle">Messiento InMESSIonante</h1>
+          </div>
+          <section class="section__conteiner--stats col col-sm-12 col-xl-10">
+            <article class="row justify-content-center">
+              <!--Conteiner-->
+
+              <div class="col col-8 align-self-center">
+                <h2>ESTADISTICAS DE MESSI</h2>
+              </div>
+              <!--col para titulo-->
+
+              <div class="col col-11 align-self-center">
+                <!--col para las barras-->
+                <div class="container-fluid caja__stats--general">
+                  <h2>Estadisticas Generales</h2>
+
+                  <div class="element">
+                    <div class="h3__background--stats">
+                      <h3 class="stats__h3--TitleComparative">Partidos:1015</h3>
+                    </div>
+
+                    <div class="stats__bar">
+                      <div class="stats__progress" style="--w: 100%"></div>
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <div class="h3__background--stats">
+                      <h3 class="stats__h3--TitleComparative">Goles:799</h3>
+                    </div>
+
+                    <div class="stats__bar">
+                      <div class="stats__progress" style="--w: 79%"></div>
+                    </div>
+                  </div>
+
+                  <div class="element">
+                    <div class="h3__background--stats">
+                      <h3 class="stats__h3--TitleComparative">
+                        Asistencias:353
+                      </h3>
+                    </div>
+
+                    <div class="stats__bar">
+                      <div class="stats__progress" style="--w: 35%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--fin del conteiner-->
+              </div>
+              <!--fin de la columna-->
+
+              <!--carousel de stats-->
+              <div class="col col-11 align-self-center">
+                <!--col para las barras-->
+                <div
+                  id="carouselStats"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="8000">
+                      <div class="container-fluid caja__stats--arg">
+                        <h2>ARGENTINA</h2>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Partidos:172
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div
+                              class="stats__progress"
+                              style="--w: 100%"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Goles:98
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div class="stats__progress" style="--w: 57%"></div>
+                          </div>
+                        </div>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Asistencias:53
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div class="stats__progress" style="--w: 31%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Fin de un item-->
+                    <div class="carousel-item" data-bs-interval="5000">
+                      <div class="container-fluid caja__stats--bar">
+                        <h2>BARCELONA</h2>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Partidos:778
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div
+                              class="stats__progress"
+                              style="--w: 100%"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Goles:672
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div class="stats__progress" style="--w: 86%"></div>
+                          </div>
+                        </div>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Asistencias:269
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div class="stats__progress" style="--w: 35%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin de otro item-->
+                    <div class="carousel-item" data-bs-interval="5000">
+                      <div class="container-fluid caja__stats--psg">
+                        <h2>PARIS SAINT GERMAIN</h2>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Partidos:65
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div
+                              class="stats__progress"
+                              style="--w: 100%"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Goles:29
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div class="stats__progress" style="--w: 45%"></div>
+                          </div>
+                        </div>
+
+                        <div class="element">
+                          <div class="h3__background--stats">
+                            <h3 class="stats__h3--TitleComparative">
+                              Asistencias:31
+                            </h3>
+                          </div>
+
+                          <div class="stats__bar">
+                            <div class="stats__progress" style="--w: 48%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselStats"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselStats"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <!--fin del conteiner-->
+                </div>
+              </div>
+
+              <!--fin de la columna-->
+            </article>
+            <!--fin de La fila-->
+          </section>
+          <!--fin col 12-->
+          <aside class="col col-xl-2">
+            <!--carousel-->
+            <div
+              id="carouselAside"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <h2>NOVEDADES!</h2>
+                <p>Messi es el Mejor por eso trae Lo mejor de lo mejor</p>
+
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <a href="./novedades.html"
+                    ><img
+                      src="../img/buzmess.webp"
+                      class="d-block w-100"
+                      alt="Messi posando con su Sudadera de cuello redondo Winning Streak"
+                    />
+                  </a>
+                  <a href="./novedades.html">
+                    <img
+                      src="../img/Blanca.webp"
+                      class="d-block w-100"
+                      alt="Messi posando con El Clásico Polo Messi Manga Corta - Blanco"
+                    />
+                  </a>
+                  <a href="./novedades.html">
+                    <img
+                      src="../img/chakm.webp"
+                      class="d-block w-100"
+                      alt="Messi posando con su chaqueta Chaqueta de chándal Winning Streak"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <a href="./novedades.html"
+                    ><img src="../img/b6.jfif" class="d-block w-100" alt=""
+                  /></a>
+                  <a href="./novedades.html"
+                    ><img
+                      src="../img/mring.webp"
+                      class="d-block w-100"
+                      alt="M10 Ringer T-Shirt"
+                  /></a>
+                  <a href="./novedades.html">
+                    <img src="../img/b6.jfif" class="d-block w-100" alt=""
+                  /></a>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <a href="./novedades.html"
+                    ><img
+                      src="../img/m5.webp"
+                      class="d-block w-100"
+                      alt="Messi posando con Camiseta Parche de León de Chenilla"
+                  /></a>
+                  <a href="./novedades.html"
+                    ><img
+                      src="../img/Messileg.webp"
+                      class="d-block w-100"
+                      alt="Messi posando con Chaqueta Messi Legend"
+                  /></a>
+                  <a href="./novedades.html"
+                    ><img
+                      src="../img/mre.webp"
+                      class="d-block w-100"
+                      alt="Messi posando con remera MESSI Verde - Camiseta Holgada de Jersey Azul Marino"
+                  /></a>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselAside"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselAside"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
+            <button class="button--linkpage">
+              <a href="./novedades.html">OJEAR</a>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a
-                    class="nav-link efecto"
-                    aria-current="page"
-                    href="../index.html"
-                    >Home</a
+          </aside>
+          <!--Aqui comienza el aside-->
+        </main>
+
+        <footer class="row">
+          <div class="footer__conteiner--sitio col-xs-12 col-lg-4">
+            <div class="footer__conteiner--logo">
+              <a href="../index.html"><img src="../img/low.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="footer__conteiner--sponsor col-xs-12 col-lg-4">
+            <div class="footer__logos--sponsor">
+              <ul>
+                <li>
+                  <a href="https://lays.es/" target="_blank">Lays</a>
+                </li>
+                <li>
+                  <a href="https://www.adidas.com.ar/" target="_blank"
+                    >Adidas</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link efecto" href="./estadisticas.html"
-                    >Estadistica</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link efecto" href="./novedades.html">Novedad</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link efecto" href="./iconicos.html">Iconic</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link efecto" href="./palmares.html">Palmares</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link efecto" href="./contacto.html">Contacto</a>
+                <li>
+                  <a href="https://www.pepsi.com/" target="_blank">Pepsi</a>
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </header>
 
-      <!--Aqui comienza el main-->
-
-      <main class="row ">
-        <div class="col col-12 conteiner__title" >
-          <h1 class="h1__pageTitle">Messiento InMESSIonante</h1>
-        </div>
-        <section class="section__conteiner--stats col col-sm-12 col-xl-10">
-          <article class="row justify-content-center">
-            <!--Conteiner-->
-
-            <div class="col col-8 align-self-center">    
-                <h1>ESTADISTICAS DE MESSI</h1>
-            </div>
-            <!--col para titulo-->
-
-            <div class="col col-11 align-self-center">
-              <!--col para las barras-->
-              <div class="container-fluid caja__stats--general">
-                <div class="element">
-                  <div class="h2__background--stats">
-                    <h2 class="stats__h2--TitleComparative">Partidos:1015</h2>
-                  </div>
-                 
-                  <div class="stats__bar">
-                    <div class="stats__progress" style="--w: 100%"></div>
-                  </div>
-                </div>
-
-                <div class="element">
-                 <div class="h2__background--stats">
-                    <h2 class="stats__h2--TitleComparative">Goles:799</h2>
-                  </div>
-                  
-                  <div class="stats__bar">
-                    <div class="stats__progress" style="--w: 79%"></div>
-                  </div>
-                </div>
-
-                <div class="element">
-                  <div class="h2__background--stats">
-                    <h2 class="stats__h2--TitleComparative">Asistencias:353</h2>
-                  </div>
-                  
-                  <div class="stats__bar">
-                    <div class="stats__progress" style="--w: 35%"></div>
-                  </div>
-                </div>
-              </div>
-              
-              <!--fin del conteiner-->
-            </div>
-            <!--fin de la columna-->
-            <!--carousel de stats-->
-            <div class="col col-11 align-self-center">
-              <!--col para las barras-->
-              <div id="carouselAside" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="8000">
-                    <div class="container-fluid caja__stats--arg">
-                      <h2>ARGENTINA</h2>
-                      <div class="element">
-                        <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Partidos:172</h2>
-                        </div>
-                       
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 100%"></div>
-                        </div>
-                      </div>
-      
-                      <div class="element">
-                       <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Goles:98</h2>
-                        </div>
-                        
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 57%"></div>
-                        </div>
-                      </div>
-      
-                      <div class="element">
-                        <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Asistencias:53</h2>
-                        </div>
-                        
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 31%"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!--Fin de un item-->
-                  <div class="carousel-item"data-bs-interval="5000">
-                    <div class="container-fluid caja__stats--bar">
-                      <h2>BARCELONA</h2>
-                      <div class="element">
-                        <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Partidos:778</h2>
-                        </div>
-                       
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 100%"></div>
-                        </div>
-                      </div>
-      
-                      <div class="element">
-                       <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Goles:672</h2>
-                        </div>
-                        
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 86%"></div>
-                        </div>
-                      </div>
-      
-                      <div class="element">
-                        <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Asistencias:269</h2>
-                        </div>
-                        
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 35%"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item"data-bs-interval="5000">
-                    <div class="container-fluid caja__stats--psg">
-                      <h2>PARIS SAINT GERMAIN</h2>
-                      <div class="element">
-                        <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Partidos:65</h2>
-                        </div>
-                       
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 100%"></div>
-                        </div>
-                      </div>
-      
-                      <div class="element">
-                       <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Goles:29</h2>
-                        </div>
-                        
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 45%"></div>
-                        </div>
-                      </div>
-      
-                      <div class="element">
-                        <div class="h2__background--stats">
-                          <h2 class="stats__h2--TitleComparative">Asistencias:31</h2>
-                        </div>
-                        
-                        <div class="stats__bar">
-                          <div class="stats__progress" style="--w: 48%"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAside" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselAside" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              
-              
-              <!--fin del conteiner-->
-            </div>
-            <!--fin de la columna-->
-          </article>
-          <!--fin de La fila-->
-        </section>
-        <!--fin col 12-->
-
-        <!--Aqui comienza el aside-->
-         <aside class="col col-xl-2 ">
-          <!--carousel-->
-            <div id="carouselAside" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <h2>NOVEDADES!</h2>
-                <p>Messi es el Mejor por eso trae Lo mejor de lo mejor</p>
-                
-                <div class="carousel-item active" data-bs-interval="5000">
-                  <img src="../img/buzmess.webp" class="d-block w-100" alt="Messi posando con su buzo">
-                  <img src="../img/Blanca.webp" class="d-block w-100" alt="Messi posando con su chomba blanca">
-                  <img src="../img/chakm.webp" class="d-block w-100" alt="Messi posando con su chaketa negra con lineas, roja,blanca y celeste">
-                </div>
-                <div class="carousel-item"data-bs-interval="2000">
-                  <img src="../img/b6.jfif"  class="d-block w-100" alt="">
-                  <img src="../img/b6.jfif"  class="d-block w-100" alt="">
-                  <img src="../img/b6.jfif"  class="d-block w-100" alt="">
-                </div>
-                <div class="carousel-item"data-bs-interval="2000">
-                  <img src="../img/m5.webp"  class="d-block w-100" alt="">
-                  <img src="../img/Messileg.webp"  class="d-block w-100" alt="">
-                  <img src="../img/mre.webp"  class="d-block w-100" alt="">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAside" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselAside" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <button class="button--linkpage">
-                <a href="./pages/novedades.html">OJEAR</a>
-              </button>
-            </div>   
-        </aside>
-      </main>
-
-      <footer class="row">
-        <div class="footer__conteiner--sitio col-xs-12 col-lg-4">
-          <div class="footer__conteiner--logo">
-            <a href="../index.html"><img src="../img/low.png" alt="" /></a>
-          </div>
-        </div>
-
-        <div class="footer__conteiner--sponsor col-xs-12 col-lg-4">
-          
-          <div class="footer__logos--sponsor">
+          <div class="footer__conteiner--redes col-xs-12 col-lg-4">
             <ul>
               <li>
-                <a href="https://lays.es/" target="_blank">Lays</a>
-              </li>
-              <li>
-                <a  href="https://www.adidas.com.ar/" target="_blank"
-                  >Adidas</a
+                <a href="https://www.instagram.com/leomessi/" target="_blank"
+                  ><img
+                    class="img__logo--redes"
+                    src="../img/insta.png"
+                    alt="Logo--instagram"
+                    target="_blank"
+                  />
+                  Instagram</a
                 >
               </li>
               <li>
-                <a href="https://www.pepsi.com/" target="_blank"
-                  >Pepsi</a
+                <a href="https://www.facebook.com/leomessi" target="_blank"
+                  ><img
+                    class="img__logo--redes"
+                    src="../img/facebook-circle-logo-24.png"
+                    alt="Logo--facebook"
+                  />
+                  Facebook</a
                 >
               </li>
-              
+              <li>
+                <a href="https://www.youtube.com/@LeoMessi" target="_blank"
+                  ><img
+                    class="img__logo--redes"
+                    src="../img/youtube-logo-24.png"
+                    alt="Logo--youtube"
+                  />You tube</a
+                >
+              </li>
             </ul>
           </div>
-        </div>
+        </footer>
+      </div>
 
-        <div class="footer__conteiner--redes col-xs-12 col-lg-4">
-            <ul>
-              <li> <a href="https://www.instagram.com/leomessi/"target="_blank"
-                ><img class="img__logo--redes" src="../img/insta.png" alt="Logo--instagram"target="_blank"
-              />
-            Instagram</a></li>
-            <li><a href="https://www.facebook.com/leomessi"target="_blank"
-              ><img
-                class="img__logo--redes"
-                src="../img/facebook-circle-logo-24.png"
-                alt="Logo--facebook"
-            /> Facebook</a></li>
-            <li><a href="https://www.youtube.com/@LeoMessi" target="_blank"
-              ><img
-                class="img__logo--redes"
-                src="../img/youtube-logo-24.png"
-                alt="Logo--youtube"
-            />You tube</a></li>
-            </ul>
-
-         </div>
-      </footer>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </head>
 </html>

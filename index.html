@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HomeLeoMessi</title>
-    <link  rel="icon"   href="./img/pngwing.com.png" type="image/png" />
-    <meta name="descripcion=" content="Fan page dsobre Leo Messi, algunas estadisticas,novedades y momentos iconicos del astro Argentino">
-    <meta name="keywords" content="Messi,THE BEST,Ballon dor,La Pulga, Leo Messi,El Mejor del Mundo,futbol,El futbol">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/pngwing.com.png" type="image/png" />
+    <meta
+      name="descripcion="
+      content="Fan page dsobre Leo Messi, algunas estadisticas,novedades y momentos iconicos del astro Argentino"
+    />
+    <meta
+      name="keywords"
+      content="Messi,THE BEST,Ballon dor,La Pulga, Leo Messi,El Mejor del Mundo,futbol,El futbol"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,14 +35,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-    
+
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
-  
-  
+
   <body>
     <div class="container-fluid">
       <header class="row">
+        <!--comienzo el header-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark col col-12">
           <div class="container-fluid">
             <div class="conteiner__logo">
@@ -96,15 +102,14 @@
           </div>
         </nav>
       </header>
-
-
+      <!--fin del header-->
 
       <!--AQUI COMIENZA EL MAIN SECTION-->
       <main class="row">
-        <div class="col col-12 conteiner__title" >
+        <div class="col col-12 conteiner__title">
           <h1 class="h1__pageTitle">BIENVENIDO A LA FANPAGE DE LEO MESSI</h1>
         </div>
-        
+
         <section class="col col-12 col-xl-10">
           <div class="row">
             <article class="col col-12 article--estadistica">
@@ -128,55 +133,120 @@
                 <a class="a__button" href="./pages/iconicos.html">APRECIAR</a>
               </button>
             </article>
-          
-          <article class="col col-12 article--novedad">
-            <h2>Messiento Novedad</h2>
-            <a href="./pages/iconicos.html"
-              ><img src="./img/m5.webp" alt="iconic--img"
-            /></a>
-            <button class="button--linkpage">
-              <a class="a__button" href="./pages/iconicos.html">APRECIAR</a>
-            </button>
-          </article>
-        </div>
-        </section>
 
-        <aside class="col col-xl-2 ">
-          <!--carousel-->
-            <div id="carouselAside" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <h2>NOVEDADES!</h2>
-                <p>Messi es el Mejor por eso trae Lo mejor de lo mejor</p>
-                
-                <div class="carousel-item active" data-bs-interval="5000">
-                  <img src="./img/buzmess.webp" class="d-block w-100" alt="Messi posando con su buzo">
-                  <img src="./img/Blanca.webp" class="d-block w-100" alt="Messi posando con su chomba blanca">
-                  <img src="./img/chakm.webp" class="d-block w-100" alt="Messi posando con su chaketa negra con lineas, roja,blanca y celeste">
-                </div>
-                <div class="carousel-item"data-bs-interval="2000">
-                  <img src="./img/b6.jfif"  class="d-block w-100" alt="">
-                  <img src="./img/b6.jfif"  class="d-block w-100" alt="">
-                  <img src="./img/b6.jfif"  class="d-block w-100" alt="">
-                </div>
-                <div class="carousel-item"data-bs-interval="2000">
-                  <img src="./img/m5.webp"  class="d-block w-100" alt="">
-                  <img src="./img/Messileg.webp"  class="d-block w-100" alt="">
-                  <img src="./img/mre.webp"  class="d-block w-100" alt="">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAside" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselAside" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            <article class="col col-12 article--novedad">
+              <h2>Messiento Novedad</h2>
+              <a href="./pages/novedades.html"
+                ><img src="./img/m5.webp" alt="iconic--img"
+              /></a>
               <button class="button--linkpage">
-                <a href="./pages/novedades.html">OJEAR</a>
+                <a class="a__button" href="./pages/novedades.html">APRECIAR</a>
               </button>
-            </div>   
+            </article>
+          </div>
+        </section>
+        <!--fin del section-->
+        <!--comienzo del aside-->
+        <aside class="col col-xl-2">
+          <!--carousel-->
+          <div
+            id="carouselAside"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <h2>NOVEDADES!</h2>
+              <p>Messi es el Mejor por eso trae Lo mejor de lo mejor</p>
+
+              <div class="carousel-item active" data-bs-interval="5000">
+                <a href="./pages/novedades.html"
+                  ><img
+                    src="./img/buzmess.webp"
+                    class="d-block w-100"
+                    alt="Messi posando con su Sudadera de cuello redondo Winning Streak"
+                  />
+                </a>
+                <a href="./pages/novedades.html">
+                  <img
+                    src="./img/Blanca.webp"
+                    class="d-block w-100"
+                    alt="Messi posando con El Clásico Polo Messi Manga Corta - Blanco"
+                  />
+                </a>
+                <a href="./pages/novedades.html">
+                  <img
+                    src="./img/chakm.webp"
+                    class="d-block w-100"
+                    alt="Messi posando con su chaqueta Chaqueta de chándal Winning Streak"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <a href="./pages/novedades.html"
+                  ><img src="./img/b6.jfif" class="d-block w-100" alt=""
+                /></a>
+                <a href="./pages/novedades.html"
+                  ><img
+                    src="./img/mring.webp"
+                    class="d-block w-100"
+                    alt="M10 Ringer T-Shirt"
+                /></a>
+                <a href="./pages/novedades.html">
+                  <img src="./img/b6.jfif" class="d-block w-100" alt=""
+                /></a>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <a href="./pages/novedades.html"
+                  ><img
+                    src="./img/m5.webp"
+                    class="d-block w-100"
+                    alt="Messi posando con Camiseta Parche de León de Chenilla"
+                /></a>
+                <a href="./pages/novedades.html"
+                  ><img
+                    src="./img/Messileg.webp"
+                    class="d-block w-100"
+                    alt="Messi posando con Chaqueta Messi Legend"
+                /></a>
+                <a href="./pages/novedades.html"
+                  ><img
+                    src="./img/mre.webp"
+                    class="d-block w-100"
+                    alt="Messi posando con remera MESSI Verde - Camiseta Holgada de Jersey Azul Marino"
+                /></a>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselAside"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselAside"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <button class="button--linkpage">
+            <a href="./pages/novedades.html">OJEAR</a>
+          </button>
         </aside>
       </main>
 

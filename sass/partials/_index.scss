@@ -1,6 +1,17 @@
 @use 'variable';
 /*Header*/
-
+@mixin flex-row-around-center{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+@mixin flex-column-around-center{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
 .conteiner__title{
     display:flex;
     justify-content: center;
@@ -12,14 +23,11 @@
     }
 }
 
-aside{
-    display: none;
-}
 
 /*Article colors modifiers*/
 $articles:(
     novedad:rgb(101,168,212),
-    estadistica:gold,
+    estadistica:rgba(254,236,65,255),
     iconic:rgb(236,85,110)
 );
 @each $article,$color in $articles{
@@ -94,26 +102,19 @@ $articles:(
     }
 }
 
-@mixin flex-row-around-center{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-}
-@mixin flex-column-around-center{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-}
+aside{
+    display:none;
+    
+ }
 
-@media only screen and (min-width: 800px){
+
+@media only screen and (min-width: 1200px){
         
-    $articles:(
+ $articles:(
     novedad:rgb(101,168,212),
-    estadistica:gold,
+    estadistica:rgba(254,236,65,255),
     iconic:rgb(236,85,110)
-);
+    );
 @each $article,$color in $articles{
     .article--#{$article}{
        @include flex-row-around-center;
@@ -160,10 +161,10 @@ $articles:(
 }
 
 .article--novedad{
-    
-       display: none;
-}
 
+   display: none;
+
+}
 .button--linkpage{
     height: 40px;
     width: 100px;
@@ -187,11 +188,11 @@ $articles:(
 
 
 aside{
-   display:flex;
-   @include flex-column-around-center;
-   text-align: center;
-    font-family: variable.$font-global;
-}
+    @include flex-column-around-center;
+    text-align: center;
+     font-family: variable.$font-global;
+ }
+
 
 
   
