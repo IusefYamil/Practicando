@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content:space-evenly;
     height: 80vh;
-    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -81,7 +80,7 @@
  .caja__stats--arg{
     @include caja-stats;
     align-items: center;
-    background-image: url(../img/mtop.jpg);
+    background-image: url(../img/backArg.svg);
     h2{
         color: aliceblue;
         background-color: rgba($color: rgb(0, 0, 0), $alpha: .7);
@@ -112,7 +111,7 @@
  .caja__stats--bar{
     @include caja-stats;
     align-items: center;
-    background-image: url(../img/leo.jpg);
+    background-image: url(../img/BackBar.svg);
     h2{
         color: aliceblue;
         background-color: rgba($color:rgb(0, 0, 0), $alpha: .7);
@@ -143,7 +142,7 @@
  .caja__stats--psg{
     @include caja-stats;
     align-items: center;
-    background-image: url(../img/m30.webp);
+    background-image: url(../img/backPSG.svg);
     h2{
         color: aliceblue;
         background-color: rgba($color:rgb(0, 0, 0), $alpha: .7);
@@ -180,7 +179,7 @@
  }
 
 
-
+/*Desktop desing*/
  @media only screen and (min-width:1200px){
 
     .section__conteiner--stats{
@@ -226,7 +225,7 @@
      .caja__stats--arg{
         @include caja-stats;
         align-items: center;
-        background-image: url(../img/mtop.jpg);
+        background-image: url(../img/backArg.svg);
         h2{
             color: aliceblue;
             background-color: rgba($color:rgb(0, 0, 0), $alpha: .7);
@@ -257,7 +256,7 @@
      .caja__stats--bar{
         @include caja-stats;
         align-items: center;
-        background-image: url(../img/leo.jpg);
+        background-image: url(../img/BackBar.svg);
         h2{
             color: aliceblue;
             background-color: rgba($color:rgb(0, 0, 0), $alpha: .7);
@@ -288,7 +287,7 @@
      .caja__stats--psg{
         @include caja-stats;
         align-items: center;
-        background-image: url(../img/m30.webp);
+        background-image: url(../img/backPSG.svg);
         h2{
             color: aliceblue;
             background-color: rgba($color:rgb(0, 0, 0), $alpha: .7);

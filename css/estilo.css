@@ -78,7 +78,7 @@
   margin-bottom: 30px;
   border-radius: 20px;
   align-items: center;
-  background-image: url(../img/mtop.jpg);
+  background-image: url(../img/backArg.svg);
 }
 .caja__stats--arg h2 {
   color: aliceblue;
@@ -126,7 +126,7 @@
   margin-bottom: 30px;
   border-radius: 20px;
   align-items: center;
-  background-image: url(../img/leo.jpg);
+  background-image: url(../img/BackBar.svg);
 }
 .caja__stats--bar h2 {
   color: aliceblue;
@@ -174,7 +174,7 @@
   margin-bottom: 30px;
   border-radius: 20px;
   align-items: center;
-  background-image: url(../img/m30.webp);
+  background-image: url(../img/backPSG.svg);
 }
 .caja__stats--psg h2 {
   color: aliceblue;
@@ -219,6 +219,7 @@
     width: var(--w);
   }
 }
+/*Desktop desing*/
 @media only screen and (min-width: 1200px) {
   .section__conteiner--stats {
     background-color: rgb(254, 236, 65);
@@ -285,7 +286,7 @@
     margin-bottom: 30px;
     border-radius: 20px;
     align-items: center;
-    background-image: url(../img/mtop.jpg);
+    background-image: url(../img/backArg.svg);
   }
   .caja__stats--arg h2 {
     color: aliceblue;
@@ -332,7 +333,7 @@
     margin-bottom: 30px;
     border-radius: 20px;
     align-items: center;
-    background-image: url(../img/leo.jpg);
+    background-image: url(../img/BackBar.svg);
   }
   .caja__stats--bar h2 {
     color: aliceblue;
@@ -379,7 +380,7 @@
     margin-bottom: 30px;
     border-radius: 20px;
     align-items: center;
-    background-image: url(../img/m30.webp);
+    background-image: url(../img/backPSG.svg);
   }
   .caja__stats--psg h2 {
     color: aliceblue;
