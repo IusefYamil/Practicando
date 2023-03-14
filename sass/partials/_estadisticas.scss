@@ -49,7 +49,7 @@
  .caja__stats--general{
     @include caja-stats;
     align-items: center;
-    background-image: url(../img/messiamar.webp);
+    background-image:url(../img/BackGen.svg);
         h2{
             
             color: rgb(254, 254, 254) ;
@@ -59,7 +59,7 @@
                @include column-center-evenly;
                .h3__background--stats{
                 @include h3-center-center-height-width-radius;
-                background-color: rgba($color: rgb(0, 0, 0), $alpha: 1);
+                background-color: rgba($color: rgb(0, 0, 0), $alpha: .7);
                 .stats__h3--TitleComparative{
                     color:rgb(255, 228, 196);
                 }
@@ -67,7 +67,7 @@
    
                .stats__bar{
                   @include stats-bar-height-width-radius;
-                  background-color: rgba($color: rgb(0, 0, 0), $alpha: 1);
+                  background-color: rgba($color: rgb(0, 0, 0), $alpha: .7);
                    
                    .stats__progress{
                       @include stats-progress-flex-height-width-radius-animation;
@@ -194,7 +194,7 @@
      .caja__stats--general{
         @include caja-stats;
         align-items: flex-start;
-        background-image: url(../img/f1.png);
+        background-image: url(../img/BackGenMobile.svg);
             h2{
                 
                 color: rgb(0, 0, 0);
