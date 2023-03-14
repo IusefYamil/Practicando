@@ -42,7 +42,7 @@
     background-color: rgba(254,236,65,255);
      h2{
          text-align: center;
-         font-family: variable.$font-global;
+         
          font-weight:700;
      }
  }
@@ -52,7 +52,7 @@
     align-items: center;
     background-image: url(../img/messiamar.webp);
         h2{
-            font-family: variable.$font-global;
+            
             color: rgb(254, 254, 254) ;
             background-color: rgba($color: rgb(0, 0, 0), $alpha: .7);
         }
@@ -187,7 +187,7 @@
         background-color: rgba(254,236,65,255);
          h2{
              text-align: center;
-             font-family: variable.$font-global;
+            
              font-weight:700;
          }
      }
@@ -197,7 +197,7 @@
         align-items: flex-start;
         background-image: url(../img/f1.png);
             h2{
-                font-family: variable.$font-global;
+                
                 color: rgb(0, 0, 0);
                 background-color:transparent;
             }

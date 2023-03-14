@@ -12,32 +12,72 @@
 
 .section--iconic{
     @include flex-column-around-center;
-    width: 100vw;
-    background-color:rgb(236,85,110) ;
-    font-family: variable.$font-global;      
-         
-}
-
-.article--iconic{
-    @include flex-column-around-center;
-    height: variable.$article__height--mobile;
-    width: 100vw;
     background-color:rgb(236,85,110) ;
     font-family: variable.$font-global; 
-        h2{
-            font-size: 40px;
-            color: variable.$article__title--light;
-            text-align: center;
+      article{
+        
+        .conteiner__iconic--video{
+            display: flex;
+            align-items: center;
+           justify-content: space-around;
+             .iconic--video{
+                height: 250px;
+                width: 250px;
+                border-radius: 10px;
+             }
+            
         }
-        img{
-            height: variable.$article__img--height; 
-            width: variable.$article__img--width;
-            border-radius: 25px;
-         }
-         .iconic--video{
-            height: 300px;
-            width: 200px;
-            border-radius: 10px;
-         }
-
+        .conteiner__iconic--h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h2{
+       
+                font-size: 40px;
+                color: variable.$article__title--light;
+                text-align: center;
+            } 
+        }
+        
+      }
+   
 }
+
+@media only screen and (min-width: 1200px){
+
+    .section--iconic{
+        @include flex-column-around-center;
+        background-color:rgb(236,85,110) ;
+        font-family: variable.$font-global; 
+          article{
+            
+            .conteiner__iconic--video{
+                display: flex;
+                align-items: center;
+               justify-content: space-around;
+                 .iconic--video{
+                    height: 250px;
+                    width: 350px;
+                    border-radius: 10px;
+                 }
+                
+            }
+            .conteiner__iconic--h2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2{
+           
+                    font-size: 40px;
+                    color: variable.$article__title--light;
+                    text-align: center;
+                } 
+            }
+            
+          }
+       
+    }
+}
+
+   
+ 

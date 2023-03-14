@@ -8,6 +8,8 @@
 @use'./partials/palmares';
 @use './partials/novedades';
 *{
+    padding: 0;
+    margin: 0;
     font-family: variable.$font-global;
 }
 /*Header*/
@@ -22,8 +24,7 @@
 }
 /*My nav link*/
 .nav-link{
-    font-family: variable.$font-global;
-    color: bisque;
+    color: rgb(255, 255, 255);
     &:hover{
         padding:20px;
         background-color: rgb(251, 255, 34);
@@ -49,13 +50,17 @@
 
 }
 .footer__conteiner--sponsor{
-    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(217, 233, 233);
     .footer__logos--sponsor{
         display: flex;
         justify-content: center;
          align-items: center;
          flex-direction: column;
-         color: bisque;
+         color: rgb(217, 233, 233);
 
          ul{
             li{
@@ -74,7 +79,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: bisque;
+    background-color:rgb(255, 228, 196);
     ul{
         list-style: none;
         li{

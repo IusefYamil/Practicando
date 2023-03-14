@@ -14,7 +14,7 @@
       name="keywords"
       content="Messi,THE BEST,Ballon dor,La Pulga, Leo Messi,El Mejor del Mundo,futbol,El futbol"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+   
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -114,9 +114,12 @@
           <div class="row">
             <article class="col col-12 article--estadistica">
               <h2>Messi stats</h2>
-              <a href="./pages/estadisticas.html"
-                ><img src="./img/b4.jpg" alt="stats--img"
-              /></a>
+              <div class="conteiner__index--img">
+                <a href="./pages/estadisticas.html"
+                  ><img src="./img/MessivOrg.svg" alt="stats--img"
+                /></a>
+              </div>
+
               <button class="button--linkpage">
                 <a class="a__button" href="./pages/estadisticas.html"
                   >CHECKEAR</a
@@ -126,9 +129,14 @@
 
             <article class="col col-12 article--iconic">
               <h2>Iconic Messi</h2>
-              <a href="./pages/iconicos.html"
-                ><img src="./img/mred.jpg" alt="iconic--img"
-              /></a>
+              <div class="conteiner__index--img">
+                <a href="./pages/iconicos.html"
+                  ><img
+                    src="./img/Iconibarmessi.svg"
+                    alt="Messi celebrando Gol temporada 20/21 con Barcelona"
+                /></a>
+              </div>
+
               <button class="button--linkpage">
                 <a class="a__button" href="./pages/iconicos.html">APRECIAR</a>
               </button>
@@ -136,9 +144,12 @@
 
             <article class="col col-12 article--novedad">
               <h2>Messiento Novedad</h2>
-              <a href="./pages/novedades.html"
-                ><img src="./img/m5.webp" alt="iconic--img"
-              /></a>
+              <div class="conteiner__index--img">
+                <a href="./pages/novedades.html"
+                  ><img src="./img/m5.webp" alt="iconic--img"
+                /></a>
+              </div>
+
               <button class="button--linkpage">
                 <a class="a__button" href="./pages/novedades.html">APRECIAR</a>
               </button>
@@ -149,34 +160,36 @@
         <!--comienzo del aside-->
         <aside class="col col-xl-2">
           <!--carousel-->
-          <div
-            id="carouselAside"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
+          <h2>NOVEDADES!</h2>
+          <p>Messi es el Mejor por eso trae Lo mejor de lo mejor</p>
+          <div class="container-fluid aside__conteiner--carousel">
+           
+            <div
+              id="carouselAside"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+            
             <div class="carousel-inner">
-              <h2>NOVEDADES!</h2>
-              <p>Messi es el Mejor por eso trae Lo mejor de lo mejor</p>
-
               <div class="carousel-item active" data-bs-interval="5000">
                 <a href="./pages/novedades.html"
                   ><img
                     src="./img/buzmess.webp"
-                    class="d-block w-100"
+                    class="d-flex w-100"
                     alt="Messi posando con su Sudadera de cuello redondo Winning Streak"
                   />
                 </a>
                 <a href="./pages/novedades.html">
                   <img
                     src="./img/Blanca.webp"
-                    class="d-block w-100"
+                    class="d-flex w-100"
                     alt="Messi posando con El Clásico Polo Messi Manga Corta - Blanco"
                   />
                 </a>
                 <a href="./pages/novedades.html">
                   <img
                     src="./img/chakm.webp"
-                    class="d-block w-100"
+                    class="d-flex w-100"
                     alt="Messi posando con su chaqueta Chaqueta de chándal Winning Streak"
                   />
                 </a>
@@ -188,7 +201,7 @@
                 <a href="./pages/novedades.html"
                   ><img
                     src="./img/mring.webp"
-                    class="d-block w-100"
+                    class="d-flex w-100"
                     alt="M10 Ringer T-Shirt"
                 /></a>
                 <a href="./pages/novedades.html">
@@ -199,19 +212,19 @@
                 <a href="./pages/novedades.html"
                   ><img
                     src="./img/m5.webp"
-                    class="d-block w-100"
+                    class="d-flex w-100"
                     alt="Messi posando con Camiseta Parche de León de Chenilla"
                 /></a>
                 <a href="./pages/novedades.html"
                   ><img
                     src="./img/Messileg.webp"
-                    class="d-block w-100"
+                    class="d-flex w-100"
                     alt="Messi posando con Chaqueta Messi Legend"
                 /></a>
                 <a href="./pages/novedades.html"
                   ><img
                     src="./img/mre.webp"
-                    class="d-block w-100"
+                    class="d-flex w-100"
                     alt="Messi posando con remera MESSI Verde - Camiseta Holgada de Jersey Azul Marino"
                 /></a>
               </div>
@@ -244,9 +257,11 @@
             </button>
           </div>
 
-          <button class="button--linkpage">
-            <a href="./pages/novedades.html">OJEAR</a>
-          </button>
+          
+        </div>
+        <button class="button--linkpage">
+          <a href="./pages/novedades.html">OJEAR</a>
+        </button>
         </aside>
       </main>
 
@@ -258,6 +273,7 @@
         </div>
 
         <div class="footer__conteiner--sponsor col-xs-12 col-lg-4">
+          <h3>Sponsors</h3>
           <div class="footer__logos--sponsor">
             <ul>
               <li>
@@ -274,6 +290,7 @@
         </div>
 
         <div class="footer__conteiner--redes col-xs-12 col-lg-4">
+          <h3>REDES SOCIALES</h3>
           <ul>
             <li>
               <a href="https://www.instagram.com/leomessi/" target="_blank"
@@ -314,9 +331,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+   
   </body>
 </html>

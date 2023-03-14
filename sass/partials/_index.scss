@@ -18,7 +18,7 @@
     text-align: center;
     background-color: rgb(101,168,212);
     .h1__pageTitle{
-        font-family: variable.$font-global ;
+        
         color: variable.$article__title--light;
     }
 }
@@ -37,14 +37,19 @@ $articles:(
         justify-content:space-around;
         align-items: center;
         height: variable.$article__height--mobile;
-        font-family: variable.$font-global; 
+        
         width: 100vw;
         background-color: $color;
-        img{
-            height: variable.$article__img--height; 
-            width: variable.$article__img--width;
-            border-radius: 25px;
-         }
+        .conteiner__index--img{
+            height: variable.$conteiner__img--wh250;
+            width: variable.$conteiner__img--wh250;
+            img{
+                height:100%; 
+                width: 100%;
+                border-radius: 25px;
+             }
+        }   
+        
     }
 }
 .article--estadistica{
@@ -94,9 +99,9 @@ $articles:(
     width: 100px;
     background-color:black;
     border-radius: 10px;
-    border-color: black;
+    border-color:transparent;
     a{
-        color: bisque;
+        color: rgb(255, 228, 196);
         text-decoration: none;
         font-family: variable.$font__link--a;
     }
@@ -118,20 +123,25 @@ aside{
 @each $article,$color in $articles{
     .article--#{$article}{
        @include flex-row-around-center;
-        height: variable.$article__height--mobile;
-        font-family: variable.$font-global; 
+        height: variable.$article__height--desktop;
+         
         width: 100vw;
         background-color: $color;
-        img{
-            height: variable.$article__img--height; 
-            width: variable.$article__img--width;
-            border-radius: 25px;
-            &:hover{
-                height: variable.$article__img--height+25px; 
-                width: variable.$article__img--width+25px;
+        .conteiner__index--img{
+            height: variable.$conteiner__img--wh250;
+            width: variable.$conteiner__img--wh250;
+            img{
+                height:100%; 
+                width: 100%;
                 border-radius: 25px;
-            }
-         }
+                &:hover{
+                    height: 95%; 
+                    width: 95%;
+                    border-radius: 25px;
+                }
+             }
+        }
+       
     }
 }
 .article--estadistica{
@@ -166,22 +176,20 @@ aside{
 
 }
 .button--linkpage{
-    height: 40px;
-    width: 100px;
+    height: 45px;
+    width: 120px;
     background-color:black;
     border-radius: 10px;
-    border-color: black;
+    border-color:transparent;
     a{
-        color: bisque;
+        color: rgb(217, 233, 233);
         text-decoration: none;
         font-family: variable.$font__link--a;
-
-
     }
     &:hover{
-        height: 50px;
-    width: 120px;
-    border-radius: 10px;
+        
+        font-size: larger;
+        border-radius: 10px;
     }
 
 }
@@ -189,13 +197,20 @@ aside{
 
 aside{
     @include flex-column-around-center;
-    text-align: center;
-     font-family: variable.$font-global;
+     
+     background-color: rgb(217, 233, 233);
+     text-align: center;
+     .aside__conteiner--carousel{
+        
+        .carouselAside{
+            align-items: center;
+            justify-content: space-around;
+         
+        }
+
+     }
+
  }
 
-
-
-  
- 
 }
 

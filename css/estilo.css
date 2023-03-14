@@ -16,7 +16,6 @@
 }
 .section__conteiner--stats h2 {
   text-align: center;
-  font-family: "Oswald", sans-serif;
   font-weight: 700;
 }
 
@@ -34,7 +33,6 @@
   background-image: url(../img/messiamar.webp);
 }
 .caja__stats--general h2 {
-  font-family: "Oswald", sans-serif;
   color: rgb(254, 254, 254);
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -227,7 +225,6 @@
   }
   .section__conteiner--stats h2 {
     text-align: center;
-    font-family: "Oswald", sans-serif;
     font-weight: 700;
   }
   .caja__stats--general {
@@ -244,7 +241,6 @@
     background-image: url(../img/f1.png);
   }
   .caja__stats--general h2 {
-    font-family: "Oswald", sans-serif;
     color: rgb(0, 0, 0);
     background-color: transparent;
   }
@@ -433,37 +429,60 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
   background-color: rgb(236, 85, 110);
   font-family: "Oswald", sans-serif;
 }
-
-.article--iconic {
+.section--iconic article .conteiner__iconic--video {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  height: 450px;
-  width: 100vw;
-  background-color: rgb(236, 85, 110);
-  font-family: "Oswald", sans-serif;
+  justify-content: space-around;
 }
-.article--iconic h2 {
+.section--iconic article .conteiner__iconic--video .iconic--video {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+.section--iconic article .conteiner__iconic--h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section--iconic article .conteiner__iconic--h2 h2 {
   font-size: 40px;
   color: white;
   text-align: center;
 }
-.article--iconic img {
-  height: 200px;
-  width: 230px;
-  border-radius: 25px;
-}
-.article--iconic .iconic--video {
-  height: 300px;
-  width: 200px;
-  border-radius: 10px;
-}
 
+@media only screen and (min-width: 1200px) {
+  .section--iconic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(236, 85, 110);
+    font-family: "Oswald", sans-serif;
+  }
+  .section--iconic article .conteiner__iconic--video {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .section--iconic article .conteiner__iconic--video .iconic--video {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+  }
+  .section--iconic article .conteiner__iconic--h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section--iconic article .conteiner__iconic--h2 h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+}
 /*Header*/
 .conteiner__title {
   display: flex;
@@ -472,7 +491,6 @@
   background-color: rgb(101, 168, 212);
 }
 .conteiner__title .h1__pageTitle {
-  font-family: "Oswald", sans-serif;
   color: white;
 }
 
@@ -483,13 +501,16 @@
   justify-content: space-around;
   align-items: center;
   height: 450px;
-  font-family: "Oswald", sans-serif;
   width: 100vw;
   background-color: rgb(101, 168, 212);
 }
-.article--novedad img {
-  height: 200px;
-  width: 230px;
+.article--novedad .conteiner__index--img {
+  height: 250px;
+  width: 250px;
+}
+.article--novedad .conteiner__index--img img {
+  height: 100%;
+  width: 100%;
   border-radius: 25px;
 }
 
@@ -499,13 +520,16 @@
   justify-content: space-around;
   align-items: center;
   height: 450px;
-  font-family: "Oswald", sans-serif;
   width: 100vw;
   background-color: rgb(254, 236, 65);
 }
-.article--estadistica img {
-  height: 200px;
-  width: 230px;
+.article--estadistica .conteiner__index--img {
+  height: 250px;
+  width: 250px;
+}
+.article--estadistica .conteiner__index--img img {
+  height: 100%;
+  width: 100%;
   border-radius: 25px;
 }
 
@@ -515,13 +539,16 @@
   justify-content: space-around;
   align-items: center;
   height: 450px;
-  font-family: "Oswald", sans-serif;
   width: 100vw;
   background-color: rgb(236, 85, 110);
 }
-.article--iconic img {
-  height: 200px;
-  width: 230px;
+.article--iconic .conteiner__index--img {
+  height: 250px;
+  width: 250px;
+}
+.article--iconic .conteiner__index--img img {
+  height: 100%;
+  width: 100%;
   border-radius: 25px;
 }
 
@@ -559,10 +586,10 @@
   width: 100px;
   background-color: black;
   border-radius: 10px;
-  border-color: black;
+  border-color: transparent;
 }
 .button--linkpage a {
-  color: bisque;
+  color: rgb(255, 228, 196);
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
@@ -577,19 +604,22 @@ aside {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 450px;
-    font-family: "Oswald", sans-serif;
+    height: 65vh;
     width: 100vw;
     background-color: rgb(101, 168, 212);
   }
-  .article--novedad img {
-    height: 200px;
-    width: 230px;
+  .article--novedad .conteiner__index--img {
+    height: 250px;
+    width: 250px;
+  }
+  .article--novedad .conteiner__index--img img {
+    height: 100%;
+    width: 100%;
     border-radius: 25px;
   }
-  .article--novedad img:hover {
-    height: 225px;
-    width: 255px;
+  .article--novedad .conteiner__index--img img:hover {
+    height: 95%;
+    width: 95%;
     border-radius: 25px;
   }
   .article--estadistica {
@@ -597,19 +627,22 @@ aside {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 450px;
-    font-family: "Oswald", sans-serif;
+    height: 65vh;
     width: 100vw;
     background-color: rgb(254, 236, 65);
   }
-  .article--estadistica img {
-    height: 200px;
-    width: 230px;
+  .article--estadistica .conteiner__index--img {
+    height: 250px;
+    width: 250px;
+  }
+  .article--estadistica .conteiner__index--img img {
+    height: 100%;
+    width: 100%;
     border-radius: 25px;
   }
-  .article--estadistica img:hover {
-    height: 225px;
-    width: 255px;
+  .article--estadistica .conteiner__index--img img:hover {
+    height: 95%;
+    width: 95%;
     border-radius: 25px;
   }
   .article--iconic {
@@ -617,19 +650,22 @@ aside {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 450px;
-    font-family: "Oswald", sans-serif;
+    height: 65vh;
     width: 100vw;
     background-color: rgb(236, 85, 110);
   }
-  .article--iconic img {
-    height: 200px;
-    width: 230px;
+  .article--iconic .conteiner__index--img {
+    height: 250px;
+    width: 250px;
+  }
+  .article--iconic .conteiner__index--img img {
+    height: 100%;
+    width: 100%;
     border-radius: 25px;
   }
-  .article--iconic img:hover {
-    height: 225px;
-    width: 255px;
+  .article--iconic .conteiner__index--img img:hover {
+    height: 95%;
+    width: 95%;
     border-radius: 25px;
   }
   .article--estadistica h2 {
@@ -651,20 +687,19 @@ aside {
     display: none;
   }
   .button--linkpage {
-    height: 40px;
-    width: 100px;
+    height: 45px;
+    width: 120px;
     background-color: black;
     border-radius: 10px;
-    border-color: black;
+    border-color: transparent;
   }
   .button--linkpage a {
-    color: bisque;
+    color: rgb(217, 233, 233);
     text-decoration: none;
     font-family: "Roboto", sans-serif;
   }
   .button--linkpage:hover {
-    height: 50px;
-    width: 120px;
+    font-size: larger;
     border-radius: 10px;
   }
   aside {
@@ -672,8 +707,12 @@ aside {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(217, 233, 233);
     text-align: center;
-    font-family: "Oswald", sans-serif;
+  }
+  aside .aside__conteiner--carousel .carouselAside {
+    align-items: center;
+    justify-content: space-around;
   }
 }
 .palmares__conteiner {
@@ -799,6 +838,8 @@ aside {
 }
 /*Here i put gobal variable*/
 * {
+  padding: 0;
+  margin: 0;
   font-family: "Oswald", sans-serif;
 }
 
@@ -815,8 +856,7 @@ aside {
 
 /*My nav link*/
 .nav-link {
-  font-family: "Oswald", sans-serif;
-  color: bisque;
+  color: rgb(255, 255, 255);
 }
 .nav-link:hover {
   padding: 20px;
@@ -840,14 +880,18 @@ aside {
 }
 
 .footer__conteiner--sponsor {
-  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(217, 233, 233);
 }
 .footer__conteiner--sponsor .footer__logos--sponsor {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: bisque;
+  color: rgb(217, 233, 233);
 }
 .footer__conteiner--sponsor .footer__logos--sponsor ul li {
   list-style: none;
@@ -863,7 +907,7 @@ aside {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: bisque;
+  background-color: rgb(255, 228, 196);
 }
 .footer__conteiner--redes ul {
   list-style: none;
